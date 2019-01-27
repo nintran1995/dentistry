@@ -64,7 +64,9 @@
     <Compile Include="Models\ApplicationRoleGroup.cs" />
     <Compile Include="Models\ApplicationUser.cs" />
     <Compile Include="Models\ApplicationUserGroup.cs" />
+    <Compile Include="Models\BenhNhan.cs" />
     <Compile Include="Models\ContactDetail.cs" />
+    <Compile Include="Models\DanhSachTiepNhan.cs" />
     <Compile Include="Models\Error.cs" />
     <Compile Include="Models\Feedback.cs" />
     <Compile Include="Models\Footer.cs" />

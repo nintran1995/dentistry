@@ -68,13 +68,19 @@
     <Compile Include="Migrations\201812111243466_NinDataBase.Designer.cs">
       <DependentUpon>201812111243466_NinDataBase.cs</DependentUpon>
     </Compile>
+    <Compile Include="Migrations\201901271417063_DentistryDB.cs" />
+    <Compile Include="Migrations\201901271417063_DentistryDB.Designer.cs">
+      <DependentUpon>201901271417063_DentistryDB.cs</DependentUpon>
+    </Compile>
     <Compile Include="Migrations\Configuration.cs" />
     <Compile Include="Properties\AssemblyInfo.cs" />
     <Compile Include="Repositories\ApplicationGroupRepository.cs" />
     <Compile Include="Repositories\ApplicationRoleGroupRepository.cs" />
     <Compile Include="Repositories\ApplicationRoleRepository.cs" />
     <Compile Include="Repositories\ApplicationUserGroupRepository.cs" />
+    <Compile Include="Repositories\BenhNhanRepository.cs" />
     <Compile Include="Repositories\ContactDetailRepository.cs" />
+    <Compile Include="Repositories\DanhSachTiepNhanRepository.cs" />
     <Compile Include="Repositories\ErrorRepository.cs" />
     <Compile Include="Repositories\FeedbackRepository.cs" />
     <Compile Include="Repositories\FooterRepository.cs" />
@@ -115,6 +121,9 @@
   <ItemGroup>
     <EmbeddedResource Include="Migrations\201812111243466_NinDataBase.resx">
       <DependentUpon>201812111243466_NinDataBase.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="Migrations\201901271417063_DentistryDB.resx">
+      <DependentUpon>201901271417063_DentistryDB.cs</DependentUpon>
     </EmbeddedResource>
   </ItemGroup>
   <Import Project="$(MSBuildToolsPath)\Microsoft.CSharp.targets" />

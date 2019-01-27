@@ -56,11 +56,13 @@ namespace TranninShop.Web.Infrastructure.Core
         {
             try
             {
-                Error error = new Error();
-                error.CreatedDate = DateTime.Now;
-                error.Message = ex.Message;
-                error.StackTrace = ex.StackTrace;
-                _errorService.Create(error);
+				Error error = new Error
+				{
+					CreatedDate = DateTime.Now,
+					Message = ex.Message,
+					StackTrace = ex.StackTrace
+				};
+				_errorService.Create(error);
                 _errorService.Save();
             }
             catch

@@ -41,7 +41,12 @@ namespace TranninShop.Data
         public DbSet<ApplicationRoleGroup> ApplicationRoleGroups { set; get; }
         public DbSet<ApplicationUserGroup> ApplicationUserGroups { set; get; }
 
-        public static TranninShopDbContext Create()
+		//Dentistry
+		public DbSet<BenhNhan> BenhNhans { set; get; }
+		public DbSet<DanhSachTiepNhan> DanhSachTiepNhans { set; get; }
+
+
+		public static TranninShopDbContext Create()
         {
             return new TranninShopDbContext();
         }
