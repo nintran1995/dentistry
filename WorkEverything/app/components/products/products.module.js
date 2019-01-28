@@ -21,6 +21,6 @@
             parent: "base",
             templateUrl: "/app/components/products/productUpdateView.html",
             controller: "productUpdateController"
-        });;
+        });
     }
 })();

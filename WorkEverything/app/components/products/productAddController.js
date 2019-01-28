@@ -7,12 +7,12 @@
         $scope.product = {
             CreateDate: new Date(),
             Status: true
-        }
+        };
 
         $scope.ckeditorOptions = {
             language: 'vi',
             height: '200px'
-        }
+        };
 
         $scope.AddProduct = AddProduct;
         $scope.GetSeoTitle = GetSeoTitle;
@@ -36,7 +36,7 @@
             apiService.get('api/productcategory/getallparents', null, function (result) {
                 $scope.productCategories = result.data;
             }, function () {
-                console.log('Cannot get list Parent')
+                console.log('Cannot get list Parent');
             });
         }
 
@@ -45,10 +45,10 @@
             finder.selectActionFunction = function (fileUrl) {
                 $scope.$apply(function () {
                     $scope.product.Image = fileUrl;
-                })
-            }
+                });
+            };
             finder.popup();
-        }
+        };
 
         loadProductCategory();
 
@@ -58,9 +58,9 @@
             finder.selectActionFunction = function (fileUrl) {
                 $scope.$apply(function () {
                     $scope.moreImages.push(fileUrl);
-                })
-            }
+                });
+            };
             finder.popup();
-        }
+        };
     }
 })(angular.module('tranninshop.products'));

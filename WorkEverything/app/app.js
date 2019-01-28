@@ -1,8 +1,8 @@
-﻿/// <reference path="/Assets/admin/libs/angular/angular.js" />
+﻿/// <reference path="~/assets/admin/libs/angular/angular.js" />
 
 (function () {
-    angular.module('tranninshop',
-        ['tranninshop.products',
+    angular.module('tranninshop', //Create a module that name is tranninshop
+        ['tranninshop.products', //Dependency
             'tranninshop.product_categories',
             'tranninshop.common'])
         .config(config)
@@ -38,14 +38,14 @@
                     return $q.reject(rejection);
                 },
                 response: function (response) {
-                    if (response.status == "401") {
+                    if (response.status === "401") {
                         $location.path('/login');
                     }
                     //the same response/modified/or a new one need to be returned.
                     return response;
                 },
                 responseError: function (rejection) {
-                    if (rejection.status == "401") {
+                    if (rejection.status === "401") {
                         $location.path('/login');
                     }
                     return $q.reject(rejection);

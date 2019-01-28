@@ -9,7 +9,7 @@
         $scope.ckeditorOptions = {
             language: 'vi',
             height: '200px'
-        }
+        };
 
         $scope.UpdateProduct = UpdateProduct;
         $scope.moreImages = [];
@@ -43,7 +43,7 @@
             apiService.get('api/productcategory/getallparents', null, function (result) {
                 $scope.productCategories = result.data;
             }, function () {
-                console.log('Cannot get list Parent')
+                console.log('Cannot get list Parent');
             });
         }
 
@@ -52,20 +52,20 @@
             finder.selectActionFunction = function (fileUrl) {
                 $scope.$apply(function () {
                     $scope.product.Image = fileUrl;
-                })
-            }
+                });
+            };
             finder.popup();
-        }
+        };
 
         $scope.ChooseMoreImage = function () {
             var finder = new CKFinder();
             finder.selectActionFunction = function (fileUrl) {
                 $scope.$apply(function () {
                     $scope.moreImages.push(fileUrl);
-                })
-            }
+                });
+            };
             finder.popup();
-        }
+        };
 
         loadProductDetail();
         loadProductCategory();

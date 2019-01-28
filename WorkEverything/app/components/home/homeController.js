@@ -1,5 +1,5 @@
 ﻿(function (app) {
-    app.controller('homeController', homeController)
+    app.controller('homeController', homeController);
 
     function homeController() {
 

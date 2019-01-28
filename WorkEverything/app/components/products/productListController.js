@@ -29,14 +29,14 @@
                     params: {
                         checkedProducts: JSON.stringify(listId)
                     }
-                }
+                };
                 apiService.del('api/product/deletemulti', config, function (result) {
                     notificationService.displaySuccess('Xóa thành công ' + result.data + ' sản phẩm.');
                     search();
                 }, function (error) {
                     notificationService.displayError('Xóa không thành công.');
                 });
-            });           
+            });
         }
 
         function selectAll() {
@@ -70,18 +70,18 @@
                     params: {
                         id: id
                     }
-                }
+                };
                 apiService.del('api/product/delete', config, function () {
                     notificationService.displaySuccess('Xóa thành công.');
                     search();
                 }, function () {
                     notificationService.displayError('Xóa không thành công.');
-                })
+                });
             });
         }
 
         function search() {
-            getProducts()
+            getProducts();
         }
         function getProducts(page) {
             page = page || 0;
@@ -91,9 +91,9 @@
                     page: page,
                     pageSize: 10
                 }
-            }
+            };
             apiService.get('/api/product/getall', config, function (result) {
-                if (result.data.TotalCount == 0) {
+                if (result.data.TotalCount === 0) {
                     notificationService.displayWarning('Không tìm thấy kết quả. Vui lòng thử lại.');
                 }
                 $scope.products = result.data.Items;
