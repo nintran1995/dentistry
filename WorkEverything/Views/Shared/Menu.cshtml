@@ -1,0 +1,52 @@
+﻿@model IEnumerable<TranninShop.Web.Models.ProductCategoryViewModel>
+
+<!-- second header -->
+<div class="main-top">
+    <div class="container">
+        <div class="header d-md-flex justify-content-between align-items-center py-3">
+            <!-- logo -->
+            <div id="logo">
+                <h1>
+                    <a href="index.html">
+                        <span class="fa fa-user-md mr-2"></span>
+                        <span class="logo-sp">Nha Khoa</span> Uy Tín
+                    </a>
+                </h1>
+            </div>
+            <!-- //logo -->
+            <!-- nav -->
+            <div class="nav_w3ls">
+                <nav>
+                    <label for="drop" class="toggle">Menu</label>
+                    <input type="checkbox" id="drop" />
+                    <ul class="menu">
+                        @foreach (var category in Model.Where(x => x.ParentID == null))
+                        {
+                            <li class="mx-lg-4 mx-md-3 my-md-0 my-2"><a href="about.html">@category.Name</a></li>
+                            var childCategories = Model.Where(x => x.ParentID == category.ID);
+                            if (childCategories.Count() > 0)
+                            {
+                                <li class="mx-lg-4 mx-md-3 my-md-0 my-2">
+                                    <!-- First Tier Drop Down -->
+                                    <label for="drop-2" class="toggle toogle-2">
+                                        @category.Name <span class="fa fa-angle-down" aria-hidden="true"></span>
+                                    </label>
+                                    <a href="#"><span class="fa fa-angle-down" aria-hidden="true"></span></a>
+                                    <input type="checkbox" id="drop-2" />
+                                    <ul>
+                                        @foreach (var childCategory in childCategories)
+                                        {
+                                            <li><a href="#services" class="drop-text">@childCategory.Name</a></li>
+                                        }
+                                    </ul>
+                                </li>
+                            }
+                        }
+                    </ul>
+                </nav>
+            </div>
+            <!-- //nav -->
+        </div>
+    </div>
+</div>
+<!-- //second header -->

@@ -7,7 +7,7 @@
         $scope.productCategory = {
             CreateDate: new Date(),
             Status: true
-        }
+        };
 
         $scope.AddProductCategory = AddProductCategory;
         $scope.GetSeoTitle = GetSeoTitle;
@@ -30,7 +30,7 @@
             apiService.get('api/productcategory/getallparents', null, function (result) {
                 $scope.parentCategories = result.data;
             }, function () {
-                console.log('Cannot get list Parent')
+                console.log('Cannot get list Parent');
             });
         }
 

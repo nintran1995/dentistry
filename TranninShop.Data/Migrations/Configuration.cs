@@ -4,20 +4,19 @@
 	using Microsoft.AspNet.Identity.EntityFramework;
 	using System;
 	using System.Collections.Generic;
-	using System.Data.Entity;
-    using System.Data.Entity.Migrations;
-    using System.Linq;
+	using System.Data.Entity.Migrations;
+	using System.Linq;
 	using TranninShop.Model.Models;
 
 	internal sealed class Configuration : DbMigrationsConfiguration<TranninShop.Data.TranninShopDbContext>
-    {
-        public Configuration()
-        {
-            AutomaticMigrationsEnabled = false;
-        }
+	{
+		public Configuration()
+		{
+			AutomaticMigrationsEnabled = false;
+		}
 
-        protected override void Seed(TranninShop.Data.TranninShopDbContext context)
-        {
+		protected override void Seed(TranninShop.Data.TranninShopDbContext context)
+		{
 			CreateProductCategorySample(context);
 			CreateUser(context);
 		}
@@ -28,10 +27,12 @@
 			{
 				List<ProductCategory> listProductCategory = new List<ProductCategory>()
 			{
-				new ProductCategory() { Name="Điện lạnh",Alias="dien-lanh",Status=true },
-				 new ProductCategory() { Name="Viễn thông",Alias="vien-thong",Status=true },
-				  new ProductCategory() { Name="Đồ gia dụng",Alias="do-gia-dung",Status=true },
-				   new ProductCategory() { Name="Mỹ phẩm",Alias="my-pham",Status=true }
+				new ProductCategory() { Name="Giới Thiệu",Alias="gioi-thieu",Status=true },
+				new ProductCategory() { Name="Nha Khoa",Alias="nha-khoa",Status=true },
+				new ProductCategory() { Name="Bệnh Lý",Alias="benh-ly",Status=true },
+				new ProductCategory() { Name="Bảng Giá",Alias="bang-gia",Status=true },
+				new ProductCategory() { Name="Khuyến Mãi",Alias="khuyen-mai",Status=true },
+				new ProductCategory() { Name="Tư Vấn",Alias="tu-van",Status=true }
 			};
 				context.ProductCategories.AddRange(listProductCategory);
 				context.SaveChanges();

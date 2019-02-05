@@ -23,13 +23,13 @@ namespace TranninShop.Web.Controllers
 			return View();
 		}
 
-		[ChildActionOnly]//Chi de nhung
+		[ChildActionOnly]
 		public ActionResult Header()
 		{
 			return PartialView();
 		}
 
-		[ChildActionOnly]//Chi de nhung
+		[ChildActionOnly]
 		public ActionResult Menu()
 		{
 			var model = _productCategoryService.GetAll();
@@ -37,13 +37,13 @@ namespace TranninShop.Web.Controllers
 			return PartialView(listProductCategoryViewModel);
 		}
 
-		[ChildActionOnly]//Chi de nhung
-		public ActionResult Bander()
+		[ChildActionOnly]
+		public ActionResult Banner()
 		{
 			return PartialView();
 		}
 
-		[ChildActionOnly]//Chi de nhung
+		[ChildActionOnly]
 		public ActionResult Footer()
 		{
 			return PartialView();
