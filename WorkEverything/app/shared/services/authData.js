@@ -7,7 +7,7 @@
             IsAuthenticated: false,
             userName: ""
         };
-        authDataFactory.  = authentication;
+        authDataFactory.authenticationData = authentication;
 
         return authDataFactory;
     }]);

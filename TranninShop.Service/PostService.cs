@@ -59,7 +59,6 @@ namespace TranninShop.Service
 
         public IEnumerable<Post> GetAllByTagPaging(string tag, int page, int pageSize, out int totalRow)
         {
-            //TODO: Select all post by tag
             return _postRepository.GetAllByTag(tag, page, pageSize, out totalRow);
         }
 

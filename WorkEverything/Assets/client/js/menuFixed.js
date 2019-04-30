@@ -14,11 +14,9 @@
             });
         }
         if (sd > settings.min) {
-            console.log("Lon");
             $(".main-top").addClass(settings.containerClass);
         }
         else {
-            console.log("Nho");
             $(".main-top").removeClass(settings.containerClass);
         }
     });

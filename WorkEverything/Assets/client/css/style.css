@@ -182,7 +182,9 @@ a.login-button-2 {
     position: absolute;
     z-index: 999;
     width: 100%;
-    background: rgba(0, 0, 0, 0.4);
+    background: #3b5998;
+    opacity: 0.9;
+    /*background: rgba(0, 0, 0, 0.4);*/
 }
 
 .fixed {

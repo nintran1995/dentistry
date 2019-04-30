@@ -5283,6 +5283,7 @@
     <Content Include="Assets\client\css\single.css" />
     <Content Include="Assets\client\css\style.css" />
     <Content Include="Assets\client\fonts\fontawesome-webfont.svg" />
+    <Content Include="Assets\client\icon\nha-khoa-logo.ico" />
     <Content Include="Assets\client\images\1.jpg" />
     <Content Include="Assets\client\images\2.jpg" />
     <Content Include="Assets\client\images\3.jpg" />
@@ -5333,6 +5334,7 @@
   </ItemGroup>
   <ItemGroup>
     <Folder Include="app\components\orders\" />
+    <Folder Include="app\components\patients\" />
     <Folder Include="app\components\roles\" />
     <Folder Include="app\components\users\" />
     <Folder Include="app\shared\footer\" />
@@ -5348,21 +5350,21 @@
     <Service Include="{508349B6-6B84-4DF5-91F0-309BEEBAD82D}" />
   </ItemGroup>
   <ItemGroup>
-    <ProjectReference Include="..\TranninShop.Common\TranninShop.Common.csproj">
+    <ProjectReference Include="..\TranninShop.Common\NhaKhoaUyTin.Common.csproj">
       <Project>{3b18cda1-cdf7-4a44-80dd-40e7c841e8f2}</Project>
-      <Name>TranninShop.Common</Name>
+      <Name>NhaKhoaUyTin.Common</Name>
     </ProjectReference>
-    <ProjectReference Include="..\TranninShop.Data\TranninShop.Data.csproj">
+    <ProjectReference Include="..\TranninShop.Data\NhaKhoaUyTin.Data.csproj">
       <Project>{9e5c1859-a904-48eb-892c-c86db941d655}</Project>
-      <Name>TranninShop.Data</Name>
+      <Name>NhaKhoaUyTin.Data</Name>
     </ProjectReference>
-    <ProjectReference Include="..\TranninShop.Model\TranninShop.Model.csproj">
+    <ProjectReference Include="..\TranninShop.Model\NhaKhoaUyTin.Model.csproj">
       <Project>{340db988-4a1b-4ca1-80dd-3b263cc48a8b}</Project>
-      <Name>TranninShop.Model</Name>
+      <Name>NhaKhoaUyTin.Model</Name>
     </ProjectReference>
-    <ProjectReference Include="..\TranninShop.Service\TranninShop.Service.csproj">
+    <ProjectReference Include="..\TranninShop.Service\NhaKhoaUyTin.Service.csproj">
       <Project>{be320d75-156a-4fcd-85c0-bcd1fcd96234}</Project>
-      <Name>TranninShop.Service</Name>
+      <Name>NhaKhoaUyTin.Service</Name>
     </ProjectReference>
   </ItemGroup>
   <ItemGroup>

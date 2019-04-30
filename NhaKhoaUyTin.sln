@@ -1,19 +1,19 @@
 ﻿
 Microsoft Visual Studio Solution File, Format Version 12.00
-# Visual Studio 14
-VisualStudioVersion = 14.0.25420.1
+# Visual Studio 15
+VisualStudioVersion = 15.0.28307.136
 MinimumVisualStudioVersion = 10.0.40219.1
-Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "TranninShop.Web", "WorkEverything\TranninShop.Web.csproj", "{C807E2E9-6858-4C94-AA74-374C4D0E8B8B}"
+Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "NhaKhoaUyTin.Web", "WorkEverything\NhaKhoaUyTin.Web.csproj", "{C807E2E9-6858-4C94-AA74-374C4D0E8B8B}"
 EndProject
-Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "TranninShop.Common", "TranninShop.Common\TranninShop.Common.csproj", "{3B18CDA1-CDF7-4A44-80DD-40E7C841E8F2}"
+Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "NhaKhoaUyTin.Common", "TranninShop.Common\NhaKhoaUyTin.Common.csproj", "{3B18CDA1-CDF7-4A44-80DD-40E7C841E8F2}"
 EndProject
-Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "TranninShop.Model", "TranninShop.Model\TranninShop.Model.csproj", "{340DB988-4A1B-4CA1-80DD-3B263CC48A8B}"
+Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "NhaKhoaUyTin.Model", "TranninShop.Model\NhaKhoaUyTin.Model.csproj", "{340DB988-4A1B-4CA1-80DD-3B263CC48A8B}"
 EndProject
-Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "TranninShop.Data", "TranninShop.Data\TranninShop.Data.csproj", "{9E5C1859-A904-48EB-892C-C86DB941D655}"
+Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "NhaKhoaUyTin.Data", "TranninShop.Data\NhaKhoaUyTin.Data.csproj", "{9E5C1859-A904-48EB-892C-C86DB941D655}"
 EndProject
-Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "TranninShop.Service", "TranninShop.Service\TranninShop.Service.csproj", "{BE320D75-156A-4FCD-85C0-BCD1FCD96234}"
+Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "NhaKhoaUyTin.Service", "TranninShop.Service\NhaKhoaUyTin.Service.csproj", "{BE320D75-156A-4FCD-85C0-BCD1FCD96234}"
 EndProject
-Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "TranninShop.UnitTest", "TranninShop.UnitTest\TranninShop.UnitTest.csproj", "{33A55C3E-6C76-4ACC-BADA-C9C85F8FBCD4}"
+Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "NhaKhoaUyTin.UnitTest", "TranninShop.UnitTest\NhaKhoaUyTin.UnitTest.csproj", "{33A55C3E-6C76-4ACC-BADA-C9C85F8FBCD4}"
 EndProject
 Global
 	GlobalSection(SolutionConfigurationPlatforms) = preSolution
@@ -48,5 +48,8 @@ Global
 	EndGlobalSection
 	GlobalSection(SolutionProperties) = preSolution
 		HideSolutionNode = FALSE
+	EndGlobalSection
+	GlobalSection(ExtensibilityGlobals) = postSolution
+		SolutionGuid = {E59189A5-2E78-4987-926C-40CD18522B78}
 	EndGlobalSection
 EndGlobal
